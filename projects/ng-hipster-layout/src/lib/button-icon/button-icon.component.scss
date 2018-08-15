@@ -20,6 +20,10 @@ section div:hover {
   border-radius: 20%;
 }
 
+.selected-link:focus {
+  outline: 0;
+}
+
 @keyframes borders {
   0% {
     border-radius: 50%;
