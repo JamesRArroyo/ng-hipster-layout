@@ -10,6 +10,8 @@ const routes: Routes = [
     component: NgHipsterLayoutComponent,
     children: [
       { path: 'home', component: HomeComponent },
+      { path: 'dashboard', component: HomeComponent },
+      { path: 'reports', component: HomeComponent },
     ],
   },
 ];
