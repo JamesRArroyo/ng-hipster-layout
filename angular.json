@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "ng-hipster-layout": {
+      "root": "projects/ng-hipster-layout",
+      "sourceRoot": "projects/ng-hipster-layout/src",
+      "projectType": "library",
+      "prefix": "enl",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-hipster-layout/tsconfig.lib.json",
+            "project": "projects/ng-hipster-layout/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ng-hipster-layout/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-hipster-layout/src/test.ts",
+            "tsConfig": "projects/ng-hipster-layout/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-hipster-layout/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-hipster-layout/tsconfig.lib.json",
+              "projects/ng-hipster-layout/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-hipster-layout-app"
