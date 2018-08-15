@@ -1,13 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'enl-ng-hipster-layout',
-  template: `
-    <p>
-      ng-hipster-layout works!
-    </p>
-  `,
-  styles: []
+  selector: 'abox-ng-hipster-layout',
+  templateUrl: './ng-hipster-layout.component.html',
+  styleUrls: ['./ng-hipster-layout.component.css']
 })
 export class NgHipsterLayoutComponent implements OnInit {
 
