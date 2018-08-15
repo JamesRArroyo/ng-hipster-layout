@@ -1,0 +1,49 @@
+section div {
+  display: flex;
+  width: 3.5em;
+  height: 3.5em;
+  background: black;
+  animation-name: fix;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(47, 49, 54);
+  margin-bottom: 8px;
+}
+
+section div:hover {
+  animation-name: borders;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  border-radius: 20%;
+}
+
+@keyframes borders {
+  0% {
+    border-radius: 50%;
+  }
+  33% {
+    border-radius: 15%;
+  }
+  66% {
+    border-radius: 25%;
+  }
+  100% {
+    border-radius: 20%;
+  }
+}
+
+@keyframes fix {
+  from {
+    border-radius: 20%;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
+
+i {
+  color: #5D707F;
+}
