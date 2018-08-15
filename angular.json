@@ -126,7 +126,7 @@
       "root": "projects/ng-hipster-layout",
       "sourceRoot": "projects/ng-hipster-layout/src",
       "projectType": "library",
-      "prefix": "enl",
+      "prefix": "abox",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
