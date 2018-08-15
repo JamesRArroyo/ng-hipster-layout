@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { SidenavLink } from './../ng-hipster-layout.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'abox-sidenav',
@@ -6,11 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidenav.component.scss'],
 })
 export class SidenavComponent implements OnInit {
-  items: any = [
-    { title: 'Home', route: '/home', icon: 'fas fa-home' },
-    { title: 'Dashboard', route: '/dashboard', icon: 'fas fa-tachometer-alt' },
-    { title: 'Reports', route: '/reports', icon: 'fas fa-chart-pie' },
-  ];
+  @Input()
+  links: SidenavLink[] = [];
   constructor() {}
 
   ngOnInit() {}
